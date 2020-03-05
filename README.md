@@ -3,4 +3,4 @@
 # THE EMOTION TRACKING
 ###### Helps you understand your emotions and triggers.
 
-###TABLE OF CONTENT
+### TABLE OF CONTENT
