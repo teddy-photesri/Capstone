@@ -1,4 +1,4 @@
-# Capstone
+## Capstone
 
-## The Emotion Tracking
+# The Emotion Tracking
 ###### Helps you understand your emotions and triggers.
