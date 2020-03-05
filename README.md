@@ -1,7 +1,8 @@
 ## Capstone
 
-# THE EMOTION TRACKING
 ##### Helps you understand your emotions and triggers.
+# THE EMOTION TRACKING
+
 ---
 
 ### TABLE OF CONTENT
