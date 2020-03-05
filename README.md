@@ -9,12 +9,12 @@
 * Project Overview
 * Problem Statement
 * Solution
-* Timeline
 
 #### 02 - RESEARCH
 * Primary Sourcing
 * Secondary Sourcing
 * Target Audience
+* Project Timeline
 
 #### 03 - PROOF OF CONCEPT
 * Persona
