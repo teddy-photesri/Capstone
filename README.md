@@ -9,7 +9,31 @@
 * Project Overview
 * Problem Statement
 * Solution
+* Timeline
 
 #### 02 - RESEARCH
+* Primary Sourcing
+* Secondary Sourcing
+* Target Audience
+
 #### 03 - PROOF OF CONCEPT
-#### 04 - REFERENCES
+* Persona
+* Storyboard
+* Low-Fidelity Wireframes
+* Information Architecture
+* UI Design
+
+#### 04 - TECHNOLOGIES USAGE
+* Atom
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+* Python
+* Django
+* Illustrator
+* Sketch
+* Invision
+* SQLite
+
+#### 05 - REFERENCES
