@@ -3,7 +3,6 @@
 ##### Helps you understand your emotions and triggers.
 # THE EMOTION TRACKING
 
----
 
 ### TABLE OF CONTENT
 #### 01 - INTRODUCTION
