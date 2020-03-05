@@ -4,6 +4,8 @@
 ###### Helps you understand your emotions and triggers.
 ---
 
-
-
 ### TABLE OF CONTENT
+#### 01 - INTRODUCTION
+#### 02 - RESEARCH
+#### 03 - PROOF OF CONCEPT
+#### 04 - REFERENCES
