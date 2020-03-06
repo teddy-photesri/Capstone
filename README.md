@@ -1,7 +1,7 @@
 ## Capstone
 
 ##### Helps you understand your emotions and triggers.
-# THE EMOTION TRACKING
+# i-motion
 
 
 ### TABLE OF CONTENT
@@ -33,7 +33,8 @@
 * Django
 * Illustrator
 * Sketch
-* Invision
+* InVision
 * SQLite
+* API
 
 #### 05 - REFERENCES
