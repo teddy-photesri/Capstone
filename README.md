@@ -1,7 +1,7 @@
 ## Capstone
 
 ##### Helps you understand your emotions and triggers.
-# iTone
+# i-Tone
 
 
 ### TABLE OF CONTENT
