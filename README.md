@@ -49,9 +49,9 @@ ________________________________________________________________________________
     Location:   Colorado Springs, CO<br>
 
     > Finding
-    > 1. *I am a Vietnam Vet, who is struggling with Depression. I am in the recovery path
+    > 1. *"I am a Vietnam Vet, who is struggling with Depression. I am in the recovery path
 program in VA hospital. I have to do a journal to keep track of my emotions
-daily to improve my coping skills and get help with my trauma.*
+daily to improve my coping skills and get help with my trauma."*
     > 2. I am not a good writer, but I have to try. It is too hard to explain how I feel.
     > 3. Sometimes the journaling is difficult when I get triggers and in a mood. I have no
 plan to bring the notebook or the writing equipment everywhere I go.
