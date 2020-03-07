@@ -76,7 +76,7 @@ ________________________________________________________________________________
 ### 03 - PROOF OF CONCEPT
 
 **Persona**
-![Persona2. This place was so cool!](/assets/img/persona2.png "Persona2")<br>
+![Persona2. This place was so cool!](/assets/img/persona2.png "Persona2")
 ![Persona1. This place was so cool!](/assets/img/persona1.png "Persona1")
 
 **Storyboard**
