@@ -24,9 +24,8 @@ called triggers.
 - Journaling is the one effective aid for the PTSD treatment process. But it is hard for
 the patient to focus on writing.
 
-*“How might we help veterans and service member who are diagnosed with PTSD
-journal their emotions to understand the problems and trigger in the visual
-style?”*
+*“How might we help veterans and service members who are dealing with depression
+journaling to understand the problems and triggers in the easiest way?”*
 
 **Solution**
 
