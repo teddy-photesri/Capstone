@@ -6,8 +6,7 @@
 
 ### TABLE OF CONTENT
 #### 01 - INTRODUCTION
-* Project Overview
-- Journaling is an incredible stress management tool, a good habit that mitigates the
+**Project Overview** -- Journaling is an incredible stress management tool, a good habit that mitigates the
 impact of physical stressors on your health. Also, a journal helps to clarify our goals
 and helps to solve the problems of the past.
 * Problem Statement
