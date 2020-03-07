@@ -26,13 +26,13 @@ the patient to focus on writing.
 
 > *“How might we help veterans and service members who are dealing with depression
 journaling to understand the problems and triggers in the easiest way?"*
-_____________________________________________________________________________________________
 
 **Solution**
 > *Creates a personal emotion tracking application.*
 
 > - Also, this can benefit the mental health treatment plan and support the user to
 improve their coping skills.
+_____________________________________________________________________________________________
 
 #### 02 - RESEARCH
 **Primary Sourcing**
