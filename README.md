@@ -9,7 +9,17 @@
 **Project Overview** -- Journaling is an incredible stress management tool, a good habit that mitigates the
 impact of physical stressors on your health. Also, a journal helps to clarify our goals
 and helps to solve the problems of the past.
-* Problem Statement
+
+MUUD is a visual mood tracking journal and diary application, which helps you
+understand your emotions and trigger.
+
+MUUD provides several options to help the user understand the influence of people,
+surroundings, environment, time and other factors that impact mood which are
+called triggers.
+
+Improve your strength by leading your emotions.
+
+**Problem Statement** --
 * Solution
 
 #### 02 - RESEARCH
