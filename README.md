@@ -76,6 +76,7 @@ ________________________________________________________________________________
 ### 03 - PROOF OF CONCEPT
 
 **Persona**
+![Persona1. This place was so cool!](/assets/img/persona1.png "Persona1")
 
 **Storyboard**
 
@@ -96,8 +97,9 @@ ________________________________________________________________________________
 * Atom
 * HTML
 * CSS
-* JavaScript
 * Bootstrap
+* JavaScript
+* Vue JS
 * Python
 * Django
 * Illustrator
