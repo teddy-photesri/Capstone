@@ -11,10 +11,10 @@
 impact of physical stressors on your health. Also, a journal helps to clarify our goals
 and helps to solve the problems of the past.
 
-- i-Tone is a visual mood tracking journal and diary application, which helps you
+- **i-Tone** is a visual mood tracking journal and diary application, which helps you
 understand your emotions and trigger.
 
-- i-Tone provides several options to help the user understand the influence of people,
+- **i-Tone** provides several options to help the user understand the influence of people,
 surroundings, environment, time and other factors that impact mood which are
 called triggers.
 
@@ -30,7 +30,7 @@ journaling to understand the problems and triggers in the easiest way?"
 **Solution**
 > Creates a personal emotion tracking application.
 
-- Use the i-Tone application to track the user's emotions by a daily voice journaling and evaluate.
+- Use the **i-Tone** application to track the user's emotions by a daily voice journaling and evaluate.
 
 - Also, this can benefit the mental health treatment plan and support the user to
 improve their coping skills.
