@@ -43,10 +43,10 @@ ________________________________________________________________________________
 **Primary Sourcing**
 - Interview 1
 
-    Name: Tom
-    Age: 70
-    Occupation: Vietnam Veteran
-    Location: Colorado Springs, CO
+    Name:       Tom<br>
+    Age:        70<br>
+    Occupation: Vietnam Veteran<br>
+    Location:   Colorado Springs, CO<br>
 
 
 **Project Timeline**
