@@ -38,7 +38,7 @@ ________________________________________________________________________________
 #### 02 - RESEARCH
 
 **Target Audience**
-- We are focusing on veterans and service member who are diagnosed with depression. Currently in the treatment program and assigned individual mental health counselors. Which include psychiatrists, psychologist and social workers.
+- I am focusing on veterans and service members who are diagnosed with depression. Currently in the treatment program and assigned individual mental health counselors. Which include psychiatrists, psychologist and social workers.
 
 **Primary Sourcing**
 - **Interview 1**
@@ -75,8 +75,6 @@ a trigger, I don’t want to do anything.
 work."*
     > 5. I accepted that the journaling helps me improve my coping skills for sure.
 
-**Project Timeline**
-
 _____________________________________________________________________________________________
 
 #### 03 - PROOF OF CONCEPT
@@ -85,11 +83,13 @@ ________________________________________________________________________________
 
 **Storyboard**
 
+**Data Model**
+
+**Project Timeline**
+
 **Low-Fidelity Wireframes**
 
 **Information Architecture**
-
-**Data Model**
 
 **UI Design**
 
