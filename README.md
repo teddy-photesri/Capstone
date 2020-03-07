@@ -60,10 +60,10 @@ for an update and evaluate my mood.
 
 - **Interview 2**
 
-    **Name:**       Samuel<br>
-    **Age:**        37<br>
-    **Occupation:** Programmer<br>
-    **Location:**   San Francisco, CA<br>
+    **Name:**       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Samuel<br>
+    **Age:**        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;37<br>
+    **Occupation:** &nbsp;Programmer<br>
+    **Location:**   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;San Francisco, CA<br>
 
     > **Finding**
     > 1. I don’t like journaling, but I have to show my psychiatric the progress of my treatment
