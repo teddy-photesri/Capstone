@@ -3,9 +3,7 @@
 ##### Helps you understand your emotions and triggers.
 # i-Tone
 
-### TABLE OF CONTENT
-
-#### 01 - INTRODUCTION
+### 01 - INTRODUCTION
 
 **Project Overview**
 - Journaling is an incredible stress management tool, a good habit that mitigates the
@@ -35,7 +33,7 @@ journaling to understand the problems and triggers in the easiest way?"*
 improve their coping skills.
 _____________________________________________________________________________________________
 
-#### 02 - RESEARCH
+### 02 - RESEARCH
 
 **Target Audience**
 - I am focusing on veterans and service members who are diagnosed with depression. Currently in the treatment program and assigned individual mental health counselors. Which include psychiatrists, psychologist and social workers.
@@ -75,7 +73,7 @@ work."*
 
 _____________________________________________________________________________________________
 
-#### 03 - PROOF OF CONCEPT
+### 03 - PROOF OF CONCEPT
 
 **Persona**
 
@@ -93,7 +91,7 @@ ________________________________________________________________________________
 
 _____________________________________________________________________________________________
 
-#### 04 - TECHNOLOGIES USAGE
+### 04 - TECHNOLOGIES USAGE
 
 * Atom
 * HTML
@@ -110,4 +108,10 @@ ________________________________________________________________________________
 
 _____________________________________________________________________________________________
 
-#### 05 - REFERENCES
+### 05 - REFERENCES
+
+* PsyberGuid: https://psyberguide.org/expert_review/apps-for-bi-polar-disorder-expert-review/
+* 8 Reasons Keeping a Journal Can Help You Reach Your Goals: https://www.becomingminimalist.com/reasons-to-journal/
+* Turning Trauma Into Story: the Benefits of Journaling: https://www.psychologytoday.com/us/blog/brain-babble/201208/turning-trauma-story-the-benefits-journaling
+* 83 Benefits of Journaling for Depression, Anxiety, and Stress Management: https://positivepsychologyprogram.com/benefits-of-journaling/
+* Images: https://pixabay.com
