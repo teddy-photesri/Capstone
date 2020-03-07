@@ -39,14 +39,11 @@ ________________________________________________________________________________
 - We are focusing on veterans and service member who are diagnosed with depression. Currently in the treatment program and assigned individual mental health counselors. Which include psychiatrists, psychologist and social workers.
 
 
-
-
-
 **Primary Sourcing**
 
 
 **Project Timeline**
-
+----------------------------------------------------------------------------------------------
 #### 03 - PROOF OF CONCEPT
 **Persona**
 
