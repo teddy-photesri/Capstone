@@ -39,10 +39,10 @@ ________________________________________________________________________________
 
 - User Interviews
 
-> Name: Tom
-> Age: 70
-> Occupation: Vietnam Veteran
-> Location: Colorado Springs, CO
+Name: Tom
+Age: 70
+Occupation: Vietnam Veteran
+Location: Colorado Springs, CO 
 
 
 
