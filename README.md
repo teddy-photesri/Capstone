@@ -28,7 +28,12 @@ the patient to focus on writing.
 journaling to understand the problems and triggers in the easiest way?"
 
 **Solution**
+> Creates a personal emotion tracking application.
 
+- Use the i-Tone application to track the user's emotions by a daily voice journaling and evaluate.
+
+- Also, this can benefit the mental health treatment plan and support the user to
+improve their coping skills.
 
 #### 02 - RESEARCH
 * Primary Sourcing
