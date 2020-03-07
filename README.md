@@ -80,6 +80,7 @@ ________________________________________________________________________________
 ![Persona1. This place was so cool!](/assets/img/persona1.png "Persona1")
 
 **Storyboard**
+![Storyboard. This place was so cool!](/assets/img/storyboard.png "Storyboard")
 
 **Data Model**
 
