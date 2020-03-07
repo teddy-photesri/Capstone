@@ -36,18 +36,18 @@ journaling to understand the problems and triggers in the easiest way?"
 improve their coping skills.
 
 #### 02 - RESEARCH
-* Primary Sourcing
-* Secondary Sourcing
-* Target Audience
-* Project Timeline
+**Primary Sourcing**
+
+**Target Audience**
+**Project Timeline**
 
 #### 03 - PROOF OF CONCEPT
-* Persona
-* Storyboard
-* Low-Fidelity Wireframes
-* Information Architecture
-* Data Model
-* UI Design
+**Persona**
+**Storyboard**
+**Low-Fidelity Wireframes**
+**Information Architecture**
+**Data Model**
+**UI Design**
 
 #### 04 - TECHNOLOGIES USAGE
 * Atom
