@@ -36,7 +36,7 @@ ________________________________________________________________________________
 
 #### 02 - RESEARCH
 **Target Audience**
-- We are focusing on veterans and service member who are diagnosed with depression. Currently in the treatment program individuals with PTSD are assigned individual mental health counselors which include psychiatrists, psychologist and social workers.
+- We are focusing on veterans and service member who are diagnosed with depression. Currently in the treatment program individuals with depression are assigned individual mental health counselors which include psychiatrists, psychologist and social workers.
 
 
 
