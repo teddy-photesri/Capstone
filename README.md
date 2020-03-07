@@ -43,10 +43,10 @@ ________________________________________________________________________________
 **Primary Sourcing**
 - **Interview 1**
 
-    **Name:**       Tom<br>
-    **Age:**        70<br>
-    **Occupation:** Vietnam Veteran<br>
-    **Location:**   Colorado Springs, CO<br>
+    **Name:** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tom<br>
+    **Age:**  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;70<br>
+    **Occupation:** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vietnam Veteran<br>
+    **Location:**   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Colorado Springs, CO<br>
 
     > **Finding**
     > 1. *"I am a Vietnam Vet, who is struggling with Depression. I am in the recovery path
