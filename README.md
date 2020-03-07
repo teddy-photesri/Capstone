@@ -49,10 +49,15 @@ ________________________________________________________________________________
 
 #### 03 - PROOF OF CONCEPT
 **Persona**
+
 **Storyboard**
+
 **Low-Fidelity Wireframes**
+
 **Information Architecture**
+
 **Data Model**
+
 **UI Design**
 
 #### 04 - TECHNOLOGIES USAGE
