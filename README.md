@@ -37,6 +37,7 @@ ________________________________________________________________________________
 
 **Target Audience**
 - I am focusing on veterans and service members who are diagnosed with depression. Currently in the treatment program and assigned individual mental health counselors. Which include psychiatrists, psychologist and social workers.
+![Audience. This place was so cool!](/assets/img/audience.png "Audience")
 
 **Primary Sourcing**
 - **Interview 1**<br>
