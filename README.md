@@ -3,9 +3,10 @@
 ##### Helps you understand your emotions and triggers.
 # i-Tone
 
-
 ### TABLE OF CONTENT
+
 #### 01 - INTRODUCTION
+
 **Project Overview**
 - Journaling is an incredible stress management tool, a good habit that mitigates the
 impact of physical stressors on your health. Also, a journal helps to clarify our goals
@@ -21,7 +22,7 @@ called triggers.
 - Improve your strength by leading your emotions.
 
 **Problem Statement**
-- Journaling is the one effective aid for the PTSD treatment process. But it is hard for
+- Journaling is the one effective aid for the depression treatment process. But it is hard for
 the patient to focus on writing.
 
 > *“How might we help veterans and service members who are dealing with depression
@@ -35,6 +36,7 @@ improve their coping skills.
 _____________________________________________________________________________________________
 
 #### 02 - RESEARCH
+
 **Target Audience**
 - We are focusing on veterans and service member who are diagnosed with depression. Currently in the treatment program and assigned individual mental health counselors. Which include psychiatrists, psychologist and social workers.
 
@@ -43,8 +45,11 @@ ________________________________________________________________________________
 
 
 **Project Timeline**
-----------------------------------------------------------------------------------------------
+
+_____________________________________________________________________________________________
+
 #### 03 - PROOF OF CONCEPT
+
 **Persona**
 
 **Storyboard**
@@ -57,7 +62,10 @@ ________________________________________________________________________________
 
 **UI Design**
 
+_____________________________________________________________________________________________
+
 #### 04 - TECHNOLOGIES USAGE
+
 * Atom
 * HTML
 * CSS
@@ -70,5 +78,7 @@ ________________________________________________________________________________
 * InVision
 * SQLite
 * API
+
+_____________________________________________________________________________________________
 
 #### 05 - REFERENCES
