@@ -55,8 +55,9 @@ daily to improve my coping skills and get help with my trauma."*
     > 3. Sometimes the journaling is difficult when I get triggers and in a mood. I have no
 plan to bring the notebook or the writing equipment everywhere I go.
     > 4. I have to fill out the assessment at the hospital every time when I see the doctor
-for an update and evaluate my mood.<br>
+for an update and evaluate my mood.
 
+<br>
 - **Interview 2**<br>
     **Name:**       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Samuel<br>
     **Age:**        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;37<br>
