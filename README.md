@@ -6,7 +6,8 @@
 
 ### TABLE OF CONTENT
 #### 01 - INTRODUCTION
-**Project Overview** -- Journaling is an incredible stress management tool, a good habit that mitigates the
+**Project Overview**
+-- Journaling is an incredible stress management tool, a good habit that mitigates the
 impact of physical stressors on your health. Also, a journal helps to clarify our goals
 and helps to solve the problems of the past.
 
@@ -19,14 +20,16 @@ called triggers.
 
 Improve your strength by leading your emotions.
 
-**Problem Statement** -- Journaling is the one effective aid for the PTSD treatment process. But it is hard for
+**Problem Statement**
+-- Journaling is the one effective aid for the PTSD treatment process. But it is hard for
 the patient to focus on writing.
 
 *“How might we help veterans and service member who are diagnosed with PTSD
 journal their emotions to understand the problems and trigger in the visual
 style?”*
 
-* Solution
+**Solution**
+
 
 #### 02 - RESEARCH
 * Primary Sourcing
