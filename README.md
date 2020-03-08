@@ -93,6 +93,7 @@ ________________________________________________________________________________
 ![IA. This place was so cool!](/assets/img/ia.png "IA")
 
 **Low-Fidelity Wireframes**
+
 Link to Wireframes Prototype. [Link](https://invis.io/PCWBB86RHQJ#/408353737_landing).
 
 **UI Design**
