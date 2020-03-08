@@ -40,6 +40,7 @@ ________________________________________________________________________________
 
 **Primary Sourcing**
 - **Interview 1**<br>
+
     Name:       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tom<br>
     Age:        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;70<br>
     Occupation: &nbsp;Vietnam Veteran<br>
@@ -56,6 +57,7 @@ plan to bring the notebook or the writing equipment everywhere I go.
 for an update and evaluate my mood.<br>
 
 - **Interview 2**<br>
+
     Name:       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Samuel<br>
     Age:        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;37<br>
     Occupation: &nbsp;Programmer<br>
