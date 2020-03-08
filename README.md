@@ -40,10 +40,10 @@ ________________________________________________________________________________
 
 **Primary Sourcing**
 - **Interview 1**<br>
-    **Name:**       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tom<br>
-    **Age:**        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;70<br>
-    **Occupation:** &nbsp;Vietnam Veteran<br>
-    **Location:**   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Colorado Springs, CO<br>
+    Name:       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tom<br>
+    Age:        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;70<br>
+    Occupation: &nbsp;Vietnam Veteran<br>
+    Location:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Colorado Springs, CO<br>
 
     > **Finding**
     > 1. *"I am a Vietnam Vet, who is struggling with Depression. I am in the recovery path
@@ -56,10 +56,10 @@ plan to bring the notebook or the writing equipment everywhere I go.
 for an update and evaluate my mood.<br>
 
 - **Interview 2**<br>
-    **Name:**       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Samuel<br>
-    **Age:**        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;37<br>
-    **Occupation:** &nbsp;Programmer<br>
-    **Location:**   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;San Francisco, CA<br>
+    Name:       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Samuel<br>
+    Age:        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;37<br>
+    Occupation: &nbsp;Programmer<br>
+    Location:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;San Francisco, CA<br>
 
     > **Finding**
     > 1. I don’t like journaling, but I have to show my psychiatric the progress of my treatment
