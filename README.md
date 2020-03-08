@@ -36,7 +36,7 @@ ________________________________________________________________________________
 ### 02 - RESEARCH
 
 **Target Audience**
-- I am focusing on veterans and service members who are diagnosed with depression. Currently in the treatment program and assigned individual mental health counselors. Which include psychiatrists, psychologist and social workers.
+- Focusing on veterans and service members who are diagnosed with depression. Currently in the treatment program and assigned individual mental health counselors. Which include psychiatrists, psychologist and social workers.
 
 **Primary Sourcing**
 - **Interview 1**<br>
@@ -93,6 +93,7 @@ ________________________________________________________________________________
 ![IA. This place was so cool!](/assets/img/ia.png "IA")
 
 **Low-Fidelity Wireframes**
+Link to Wireframes Prototype. [Link](https://invis.io/PCWBB86RHQJ#/408353737_landing).
 
 **UI Design**
 
