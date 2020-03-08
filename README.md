@@ -87,9 +87,10 @@ ________________________________________________________________________________
 **Project Timeline**
 ![Timeline. This place was so cool!](/assets/img/timeline.png "Timeline")
 
-**Low-Fidelity Wireframes**
-
 **Information Architecture**
+![IA. This place was so cool!](/assets/img/ia.png "IA")
+
+**Low-Fidelity Wireframes**
 
 **UI Design**
 
