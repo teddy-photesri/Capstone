@@ -85,6 +85,7 @@ ________________________________________________________________________________
 **Data Model**
 
 **Project Timeline**
+![Timeline. This place was so cool!](/assets/img/timeline.png "Timeline")
 
 **Low-Fidelity Wireframes**
 
