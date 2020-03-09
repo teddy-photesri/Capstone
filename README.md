@@ -1,7 +1,7 @@
 ## Capstone
 
 ##### Helps you evaluate your emotions and triggers.
-# i-Tone
+# itone
 
 ### 01 - INTRODUCTION
 
@@ -10,10 +10,10 @@
 impact of physical stressors on your health. Also, a journal helps to clarify our goals
 and helps to solve the problems of the past.
 
-- **i-Tone** is a visual mood tracking journal and diary application, which helps you
+- **itone** is a visual mood tracking journal and diary application, which helps you
 understand your emotions and trigger.
 
-- **i-Tone** provides several options to help the user understand the influence of people,
+- **iTone** provides several options to help the user understand the influence of people,
 surroundings, environment, time and other factors that impact mood which are
 called triggers.
 
@@ -97,13 +97,21 @@ ________________________________________________________________________________
 - Emotion table
     - id
     - User id (Foreign key to user )
-    - Emotion icons
-    - Emotion names
+    - Emotion icon
+    - Emotion name
 
 - Journal entry table
     - id
     - User id (Foreign key to user)
     - Emotion id (Foreign key to user)
+    - Text
+    - Timestamp
+    - Intensity
+
+- Journal entry emotion table
+    - id
+    - Journal entry id (Foreign key to user)
+    - Emotion icon
     - Text
     - Timestamp
     - Intensity
@@ -124,18 +132,23 @@ ________________________________________________________________________________
 
 ### 04 - TECHNOLOGIES USAGE
 
-* Atom
-* HTML
-* CSS
-* Bootstrap
-* JavaScript
-* Vue.js
-* Python
-* Django
-* Illustrator
-* Sketch
-* InVision
-* SQLite
+- Development
+  - Atom
+  - HTML
+  - CSS
+  - JavaScript
+  - Python
+  - SQLite
+
+- Framework
+  - Bootstrap
+  - Vue.js
+  - Django
+
+- Design
+  - Illustrator
+  - Sketch
+  - InVision
 
 _____________________________________________________________________________________________
 
