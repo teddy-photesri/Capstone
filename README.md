@@ -86,6 +86,15 @@ ________________________________________________________________________________
 
 **Data Model**
 
+- User's data table
+
+    - id
+    - Name
+    - Profile Image
+    - Email
+    - Username
+    - Password
+
 **Project Timeline**
 ![Timeline. This place was so cool!](/assets/img/timeline.png "Timeline")
 
