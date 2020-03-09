@@ -1,6 +1,6 @@
 ## Capstone
 
-##### Helps you understand your emotions and triggers.
+##### Helps you evaluate your emotions and triggers.
 # i-Tone
 
 ### 01 - INTRODUCTION
