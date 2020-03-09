@@ -86,14 +86,27 @@ ________________________________________________________________________________
 
 **Data Model**
 
-- User's data table
-
+- User table
     - id
     - Name
     - Profile Image
     - Email
     - Username
     - Password
+
+- Emotion table
+    - id
+    - User id (Foreign key to user )
+    - Emotion icons
+    - Emotion names
+
+- Journal entry table
+    - id
+    - User id (Foreign key to user)
+    - Emotion id (Foreign key to user)
+    - Text
+    - Timestamp
+    - Intensity
 
 **Project Timeline**
 ![Timeline. This place was so cool!](/assets/img/timeline.png "Timeline")
@@ -116,14 +129,13 @@ ________________________________________________________________________________
 * CSS
 * Bootstrap
 * JavaScript
-* Vue JS
+* Vue.js
 * Python
 * Django
 * Illustrator
 * Sketch
 * InVision
 * SQLite
-* API
 
 _____________________________________________________________________________________________
 
