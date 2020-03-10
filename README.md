@@ -1,7 +1,7 @@
 ## Capstone
 
 
-![Logo](/assets/img/logo/brand@3x.png "Logo")
+![Logo](/assets/img/logo/brand3.png "Logo")
 ##### Helps you evaluate your emotions and triggers.
 # itone
 
@@ -22,8 +22,6 @@ called triggers.
 - Improve your strength by leading your emotions.
 
 **Problem Statement**
-- Journaling is the one effective aid for the depression treatment process. But it is hard for
-the patient to focus on writing.
 
 > *“How might we help veterans and service members who are dealing with depression
 journaling to understand the problems and triggers in the easiest way?"*
