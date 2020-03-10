@@ -124,12 +124,12 @@ ________________________________________________________________________________
 
 **Low-Fidelity Wireframes**
 
-- Link to Wireframes Prototype. [Link](https://invis.io/PCWBB86RHQJ#/408353737_landing).
+- Click a [Link](https://invis.io/PCWBB86RHQJ#/408353737_landing) to play with Wireframes Prototype..
 ![Wireframes](/assets/img/wireframe/wf.png "Wireframes")
 
 **UI Design**
 
-- Interaction Prototype. [Link](https://invis.io/H3WCK1K6JNU#/408554325_landing).
+- Click a [Link](https://invis.io/H3WCK1K6JNU#/408554325_landing) to play with Interaction Prototype.
 ![User Interface](/assets/img/ui/ui.png "User Interface")
 
 _____________________________________________________________________________________________
