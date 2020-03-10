@@ -125,16 +125,16 @@ ________________________________________________________________________________
 ![IA.](/assets/img/ia.png "IA")
 
 **Low-Fidelity Wireframes**
-
 - Click a [Link](https://invis.io/PCWBB86RHQJ#/408353737_landing) to play with Wireframes Prototype..
 ![Wireframes](/assets/img/wireframe/wf.png "Wireframes")
 
-**Button Design**
+**Color Palette**
+![Color Palette](/assets/img/color.png "Color Palette")
 
+**Button Design**
 ![Buttons](/assets/img/button.png "Buttons")
 
 **UI Design**
-
 - Click a [Link](https://invis.io/H3WCK1K6JNU#/408554325_landing) to play with Interaction Prototype.
 ![User Interface](/assets/img/ui/ui.png "User Interface")
 
