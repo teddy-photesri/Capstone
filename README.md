@@ -1,6 +1,7 @@
 ## Capstone
 
 ##### Helps you evaluate your emotions and triggers.
+![Logo](/assets/img/logo/brand@3x.png "Logo")
 # itone
 
 ### 01 - INTRODUCTION
