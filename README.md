@@ -78,10 +78,12 @@ ________________________________________________________________________________
 ### 03 - PROOF OF CONCEPT
 
 **Persona**
+
 ![Persona2.](/assets/img/persona2.png "Persona2")
 ![Persona1.](/assets/img/persona1.png "Persona1")
 
 **Storyboard**
+
 ![Storyboard.](/assets/img/storyboard.png "Storyboard")
 
 **Data Model**
@@ -126,6 +128,10 @@ ________________________________________________________________________________
 
 - Click a [Link](https://invis.io/PCWBB86RHQJ#/408353737_landing) to play with Wireframes Prototype..
 ![Wireframes](/assets/img/wireframe/wf.png "Wireframes")
+
+**Button Design**
+
+![Buttons](/assets/img/button.png "Buttons")
 
 **UI Design**
 
