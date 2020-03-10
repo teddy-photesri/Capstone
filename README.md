@@ -78,11 +78,11 @@ ________________________________________________________________________________
 ### 03 - PROOF OF CONCEPT
 
 **Persona**
-![Persona2. This place was so cool!](/assets/img/persona2.png "Persona2")
-![Persona1. This place was so cool!](/assets/img/persona1.png "Persona1")
+![Persona2.](/assets/img/persona2.png "Persona2")
+![Persona1.](/assets/img/persona1.png "Persona1")
 
 **Storyboard**
-![Storyboard. This place was so cool!](/assets/img/storyboard.png "Storyboard")
+![Storyboard.](/assets/img/storyboard.png "Storyboard")
 
 **Data Model**
 
@@ -117,19 +117,20 @@ ________________________________________________________________________________
     - Intensity
 
 **Project Timeline**
-![Timeline. This place was so cool!](/assets/img/timeline.png "Timeline")
+![Timeline.](/assets/img/timeline.png "Timeline")
 
 **Information Architecture**
-![IA. This place was so cool!](/assets/img/ia.png "IA")
+![IA.](/assets/img/ia.png "IA")
 
 **Low-Fidelity Wireframes**
 
 - Link to Wireframes Prototype. [Link](https://invis.io/PCWBB86RHQJ#/408353737_landing).
+![Wireframes](/assets/img/Wireframe/wf.png "Wireframes")
 
 **UI Design**
 
 - Interaction Prototype. [Link](https://invis.io/H3WCK1K6JNU#/408554325_landing).
-
+![User Interface](/assets/img/ui/ui.png "User Interface")
 
 _____________________________________________________________________________________________
 
