@@ -125,7 +125,7 @@ ________________________________________________________________________________
 **Low-Fidelity Wireframes**
 
 - Link to Wireframes Prototype. [Link](https://invis.io/PCWBB86RHQJ#/408353737_landing).
-![Wireframes](/assets/img/Wireframe/wf.png "Wireframes")
+![Wireframes](/assets/img/wireframe/wf.png "Wireframes")
 
 **UI Design**
 
