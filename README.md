@@ -131,7 +131,7 @@ ________________________________________________________________________________
 **Color Palette**
 ![Color Palette](/assets/img/color.png "Color Palette")
 
-**Button Design**
+**Icons / Buttons Design**
 ![Buttons](/assets/img/button.png "Buttons")
 
 **UI Design**
