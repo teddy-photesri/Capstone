@@ -98,7 +98,6 @@ ________________________________________________________________________________
 
 - Emotion table
     - id
-    - User id (Foreign key to user )
     - Emotion icon
     - Emotion name
 
@@ -106,14 +105,6 @@ ________________________________________________________________________________
     - id
     - User id (Foreign key to user)
     - Emotion id (Foreign key to user)
-    - Text
-    - Timestamp
-    - Intensity
-
-- Journal entry emotion table
-    - id
-    - Journal entry id (Foreign key to user)
-    - Emotion icon
     - Text
     - Timestamp
     - Intensity
