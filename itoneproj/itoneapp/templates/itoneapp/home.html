@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-  </head>
-  <body>
-    <h1>Welcome {{user.username}}</h1>
-    <a href="{% url 'itoneapp:logout' %}">logout</a>
-  </body>
-</html>
+{% extends "itoneapp/base.html" %}
+{% block content %}
+
+  <h1>Hi {{user.username}}!</h1>
+  <p>How do you feel?</p>
+  <a href="{% url 'itoneapp:logout' %}">logout</a>
+
+{% endblock content %}

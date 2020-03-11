@@ -3,11 +3,12 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
+from .models import Emotion, JournalEntry
 import requests
 
 
 def register(request):
-    return render(request, 'itoneapp/register.html')
+    return render(request, 'itoneapp/register.html', {'title': 'register'})
 
 def register_user(request):
     username = request.POST['username']
@@ -53,8 +54,10 @@ def logout_user(request):
 
 @login_required
 def home(request):
-    return render(request, 'itoneapp/home.html')
+    return render(request, 'itoneapp/home.html', {'title': 'home'})
 
 @login_required
 def profile(request):
-    return render(request, 'itoneapp/profile.html')
+    return render(request, 'itoneapp/profile.html', {'title': 'profile'})
+
+# def emotion(request):
