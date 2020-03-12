@@ -1,8 +1,65 @@
 {% extends "itoneapp/base.html" %}
 {% block content %}
 
-  <h1>Hi {{user.username}}!</h1>
-  <p>How do you feel?</p>
-  <a href="{% url 'itoneapp:logout' %}">logout</a>
+
+
+<div class="container">
+
+  <div class="row">
+    <div class="col">
+      <div class="d-flex justify-content-center">
+        <img src="{{user.profile_image.url}}" alt="" class="rounded-circle" width="125px">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="d-flex justify-content-center mt-3">
+        <h4 class="text-capitalize font-weight-bold">Hi {{user.username}}!</h4>
+      </div>
+      <div class="d-flex justify-content-center mt-5">
+        <h5>How do you feel?</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-1">
+    <div class="col-lg-12 col-md-6 col-sm-6 d-flex justify-content-between">
+
+      <!-- loop over emotions and make a div for each -->
+      {% for emotion in emotions %}
+      <div class="text-center">
+        <img src="{{emotion.emotion_icon.url}}" alt="" width="50px" class="rounded-circle shadow">
+        <div class="font-10 mt-1">{{emotion.emotion_name}}</div>
+      </div>
+      {% endfor %}
+
+
+    </div>
+  </div>
+</div>
+
+  <!-- credit to https://codepen.io/jenniferperrin/pen/IAhKv -->
+<div class="container">
+
+  <div class="row">
+    <div class="col">
+      <div class="calendar calendar-first" id="calendar_first">
+          <div class="calendar_header">
+              <button class="switch-month switch-left"> <i class="fa fa-chevron-left"></i></button>
+               <h2></h2>
+              <button class="switch-month switch-right"> <i class="fa fa-chevron-right"></i></button>
+          </div>
+          <div class="calendar_weekdays"></div>
+          <div class="calendar_content"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+  <!-- <a href="{% url 'itoneapp:logout' %}">logout</a> -->
 
 {% endblock content %}

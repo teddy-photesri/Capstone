@@ -1,14 +1,9 @@
 from django.shortcuts import render, reverse
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
-from .models import Emotion, JournalEntry
+from .models import Emotion, JournalEntry, User
 import requests
-
-
-
-
 
 
 def register(request):
@@ -58,10 +53,16 @@ def logout_user(request):
 
 @login_required
 def home(request):
-    return render(request, 'itoneapp/home.html', {'title': 'home'})
+    # get emotions out of database
+    emotions = Emotion.objects.all()
+
+    # pass them into the data context to be rendered
+    context = {
+        'title': 'home',
+        'emotions': emotions
+    }
+    return render(request, 'itoneapp/home.html', context)
 
 @login_required
 def profile(request):
     return render(request, 'itoneapp/profile.html', {'title': 'profile'})
-
-# def emotion(request):
