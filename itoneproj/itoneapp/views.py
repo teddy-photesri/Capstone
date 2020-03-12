@@ -7,6 +7,10 @@ from .models import Emotion, JournalEntry
 import requests
 
 
+
+
+
+
 def register(request):
     return render(request, 'itoneapp/register.html', {'title': 'register'})
 
