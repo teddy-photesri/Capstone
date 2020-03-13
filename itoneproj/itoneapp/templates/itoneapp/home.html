@@ -30,7 +30,8 @@
       <!-- loop over emotions and make a div for each -->
       {% for emotion in emotions %}
       <div class="text-center">
-        <img src="{{emotion.emotion_icon.url}}" alt="" width="50px" class="rounded-circle shadow">
+        <a href=""><img src="{{emotion.emotion_icon.url}}" alt="" width="50px" class="rounded-circle shadow"></a>
+
         <div class="font-10 mt-1">{{emotion.emotion_name}}</div>
       </div>
       {% endfor %}

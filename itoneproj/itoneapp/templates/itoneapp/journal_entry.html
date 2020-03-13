@@ -1,0 +1,46 @@
+{% extends "itoneapp/base.html" %}
+{% block content %}
+
+<div class="container">
+
+  <div class="row">
+    <div class="col mt-5">
+      <div class="d-flex justify-content-center">
+        <img src="{{user.profile_image.url}}" alt="" class="rounded-circle" width="125px">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="d-flex justify-content-center mt-3">
+        <h4 class="text-capitalize font-weight-bold">Hi {{user.username}}!</h4>
+      </div>
+      <div class="d-flex justify-content-center mt-5">
+        <h5>How do you feel?</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-1">
+    <div class="col-lg-12 col-md-6 col-sm-6 d-flex justify-content-between">
+
+      <!-- loop over emotions and make a div for each -->
+      {% for emotion in emotions %}
+      <div class="text-center">
+        <img src="{{emotion.emotion_icon.url}}" alt="" width="50px" class="rounded-circle shadow">
+        <div class="font-10 mt-1">{{emotion.emotion_name}}</div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+  <!-- <a href="{% url 'itoneapp:logout' %}">logout</a> -->
+
+{% endblock content %}
