@@ -6,7 +6,7 @@
 <div class="container">
 
   <div class="row">
-    <div class="col">
+    <div class="col mt-5">
       <div class="d-flex justify-content-center">
         <img src="{{user.profile_image.url}}" alt="" class="rounded-circle" width="125px">
       </div>
@@ -35,29 +35,51 @@
       </div>
       {% endfor %}
 
-
     </div>
   </div>
-</div>
 
-  <!-- credit to https://codepen.io/jenniferperrin/pen/IAhKv -->
-<div class="container">
+<!-- credit https://www.youtube.com/watch?v=CuXl6D4e9_k -->
+  <div class="row mt-4">
+    <div class="col-lg-12 col-md-6 col-sm-4 d-flex justify-content-center">
 
-  <div class="row">
-    <div class="col">
-      <div class="calendar calendar-first" id="calendar_first">
-          <div class="calendar_header">
-              <button class="switch-month switch-left"> <i class="fa fa-chevron-left"></i></button>
-               <h2></h2>
-              <button class="switch-month switch-right"> <i class="fa fa-chevron-right"></i></button>
+      <div class="text-center d-flex justify-content-between">
+        <div class="card ">
+
+          <h3 class="card-header" id="monthAndYear"></h3>
+
+          <table class="table table-bordered table-responsive-sm" id="calendar">
+            <thead>
+              <tr>
+                <th>S</th>
+                <th>M</th>
+                <th>T</th>
+                <th>W</th>
+                <th>T</th>
+                <th>F</th>
+                <th>S</th>
+              </tr>
+            </thead>
+
+            <tbody id="calendar-body"></tbody>
+          </table>
+
+          <div class="form-inline">
+            <button class="btn btn-outline-primary col-sm-6" onclick="previous()">Previous</button>
+            <button class="btn btn-outline-primary col-sm-6" onclick="next()">Next</button>
+
           </div>
-          <div class="calendar_weekdays"></div>
-          <div class="calendar_content"></div>
+
+        </div>
       </div>
+
+
     </div>
   </div>
 
+
 </div>
+
+
 
 
   <!-- <a href="{% url 'itoneapp:logout' %}">logout</a> -->
