@@ -10,11 +10,11 @@ class User(AbstractUser):
         return self.username
 
 class Emotion(models.Model):
-    emotion_icon = models.ImageField(upload_to='images/')
-    emotion_name = models.CharField(max_length=10)
+    icon = models.ImageField(upload_to='images/')
+    name = models.CharField(max_length=10)
 
     def __str__(self):
-        return self.emotion_name
+        return self.name
 
 class JournalEntry(models.Model):
     emotion = models.ForeignKey(Emotion, on_delete=models.PROTECT)
@@ -22,6 +22,15 @@ class JournalEntry(models.Model):
     intensity = models.IntegerField()
     content = models.TextField()
     date_journal = models.DateTimeField(default=timezone.now)
+
+    def time(self):
+        return str(self.date_journal)
+
+    # def date(self):
+    #     return str(self.date_journal.month) + " " + str(self.date_journal.date) + ", " + str(self.date_journal.year)
+
+    class Meta:
+        ordering = ['-date_journal']
 
     def __str__(self):
         return self.user.username + ' ' + str(self.emotion) + " " + self.content[:20] +  " " + str(self.date_journal)

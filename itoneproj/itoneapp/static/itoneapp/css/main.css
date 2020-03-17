@@ -92,7 +92,14 @@ a.article-title:hover {
   font-size: 10px;
 }
 
+.bg-color-blue {
+  background-color: #27489d;
+}
 
-/* Start Calendar CSS */
+.text-color-blue {
+  color: #27489d;
+}
 
-/* End Calendar CSS */
+.mt-13 {
+  margin-top: 13em;
+}

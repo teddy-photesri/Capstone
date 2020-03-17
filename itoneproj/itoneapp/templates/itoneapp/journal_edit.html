@@ -24,44 +24,42 @@
     </div>
   </div>
 
-  <form class="row mt-5" action="{% url 'itoneapp:savejournal' %}" method="post">
+  <form class="row mt-5" action="{% url 'itoneapp:edit_save' journal_detail.id %}" method="post">
     <input type="hidden" value="" name="emotion" id="change_emotion">
-    <div class="col-lg-12 col-md-6 col-sm-6 d-flex justify-content-between">
+    <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center">
       {% csrf_token %}
 
       <!-- loop over emotions and make a div for each -->
-      {% for emotion in emotions %}
       <div class="text-center">
         <!-- {{selected_emotion_id}} {{emotion.id}} -->
-        <div data-name="{{emotion.name}}" name="" class="emo_icon" {% if selected_emotion_id != emotion.id %}style="opacity:0.2"{% endif %}>
-          <img src="{{emotion.icon.url}}" alt="" width="50px" class="rounded-circle shadow">
+        <input type="hidden" value="{{journal_detail.emotion.name}}" name="emotion">
+        <div data-name="{{journal_detail.emotion.name}}" name="" class="emo_icon" {% if selected_emotion_id != emotion.id %}style="opacity:0.2"{% endif %}>
+          <img src="{{journal_detail.emotion.icon.url}}" alt="" width="50px" class="rounded-circle shadow">
         </div>
 
-        <div class="font-10 mt-1">{{emotion.name}}</div>
+        <div class="font-10 mt-1">{{journal_detail.emotion.name}}</div>
+
       </div>
-      {% endfor %}
+
 
     </div>
 
     <div class="col mt-3">
       <div class="form-group">
 
-        <input type="range" class="custom-range" min="0" max="10" id="input_intensity" name="intensity">
+        <input type="range" class="custom-range" value="{{journal_detail.intensity}}" min="0" max="10" id="input_intensity" name="intensity">
 
         <label class="font-10">Intensity</label>
-        <label id="label_intensity" class="font-weight-bold" for="input_intensity"></label>
+        <label id="label_intensity" class="font-weight-bold" for="input_intensity">{{journal_detail.intensity}}</label>
 
         <label for="input_detail"></label>
-        <textarea class="form-control mt-3" id="input_detail" rows="15" placeholder="Let it out!" name="input_detail"></textarea>
+        <textarea class="form-control mt-3" id="input_detail" rows="15" placeholder="Let it out!" name="input_detail">{{journal_detail.content}}</textarea>
 
 
         <div class="d-flex justify-content-center mt-3">
-
-          <!-- <a href="{% url 'itoneapp:journal_list' %}?emotion={{emotion.id}}"> -->
-            <button type="submit" class="btn btn-primary btn-lg btn-block bg-color-blue">Done</button>
-          <!-- </a> -->
-
+            <button type="submit" class="btn btn-primary btn-lg btn-block bg-color-blue">Save</button>
         </div>
+
       </div>
     </div>
   </form>

@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'itoneapp',
+    'crispy_forms',
 
 ]
 
@@ -128,3 +129,5 @@ MEDIA_URL = '/uploaded_files/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploaded_files')
 
 AUTH_USER_MODEL = 'itoneapp.User'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
