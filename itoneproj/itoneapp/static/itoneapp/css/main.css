@@ -95,9 +95,26 @@ a.article-title:hover {
 .bg-color-blue {
   background-color: #27489d;
 }
+.bg-color-lightgray {
+  background-color: #EFEFEF;
 
+}
 .text-color-blue {
   color: #27489d;
+}
+.width-100 {
+  width: 100px;
+}
+.width-300 {
+  width: 300px;
+}
+
+.mt-8 {
+  margin-top: 8em;
+}
+
+.mt-10 {
+  margin-top: 10em;
 }
 
 .mt-13 {

@@ -19,7 +19,7 @@
       <div class="d-flex justify-content-center mt-3">
         <h4 class="text-capitalize font-weight-bold">Hi {{user.username}}!</h4>
       </div>
-      <div class="d-flex justify-content-center mt-5">
+      <div class="d-flex justify-content-center mt-4">
         <h5>How do you feel?</h5>
       </div>
     </div>
@@ -33,7 +33,7 @@
       <div class="text-center">
         <a href="{% url 'itoneapp:journal_entry' %}?emotion={{emotion.id}}"><img src="{{emotion.icon.url}}" alt="" width="50px" class="rounded-circle shadow"></a>
 
-        <div class="font-10 mt-1">{{emotion.emotion_name}}</div>
+        <div class="font-10 mt-1">{{emotion.name}}</div>
       </div>
       {% endfor %}
 
@@ -41,49 +41,37 @@
   </div>
 
 <!-- credit https://www.youtube.com/watch?v=CuXl6D4e9_k -->
-  <div class="row mt-4">
+  <div class="row mt-5">
     <div class="col-lg-12 col-md-6 col-sm-4 d-flex justify-content-center">
 
-      <div class="text-center d-flex justify-content-between align-middle">
-        <div class="card">
-          <div class="d-flex justify-content-between mt-2">
-            <p class="text-left" onclick="previous()"> < </p>
+      <div class="text-center d-flex justify-content-between">
+        <div class="card ">
 
-
-            <h3 class="text-left" id="monthAndYear"></h3>
-
-            <p class="text-center" onclick="next()"> > </p>
-
-
-          </div>
-
-
-
-
-
-          <!-- <h3 class="card-header" id="monthAndYear"></h3> -->
+          <h3 class="card-header" id="monthAndYear"></h3>
 
           <table class="table table-bordered table-responsive-sm" id="calendar">
             <thead>
               <tr>
-                <th>S</th>
-                <th>M</th>
-                <th>T</th>
-                <th>W</th>
-                <th>T</th>
-                <th>F</th>
-                <th>S</th>
+                <th class="bg-color-blue text-white">S</th>
+                <th class="bg-color-blue text-white">M</th>
+                <th class="bg-color-blue text-white">T</th>
+                <th class="bg-color-blue text-white">W</th>
+                <th class="bg-color-blue text-white">T</th>
+                <th class="bg-color-blue text-white">F</th>
+                <th class="bg-color-blue text-white">S</th>
               </tr>
             </thead>
 
             <tbody id="calendar-body"></tbody>
           </table>
 
-          <!-- <div class="form-inline">
-            <button class="btn btn-outline-primary col-sm-6" onclick="previous()">Previous</button>
-            <button class="btn btn-outline-primary col-sm-6" onclick="next()">Next</button>
+          <div class="form-inline d-flex justify-content-between">
+            <div><button class="btn bg-color-blue text-white col-sm-6 width-100" onclick="previous()">Previous</button></div>
+            <div><button class="btn bg-color-blue text-white col-sm-6 width-100" onclick="next()">Next</button></div>
 
-          </div> -->
+
+
+          </div>
 
         </div>
       </div>
