@@ -48,6 +48,14 @@ function showCalendar(month, year) {
       } else {
         let cell = document.createElement('td');
         let cellText = document.createTextNode(date);
+
+
+        if (date === today.getDate()){
+          cell.style.background = "#EFEFEF";
+          
+        }
+
+
         cell.appendChild(cellText);
         row.appendChild(cell);
       }
