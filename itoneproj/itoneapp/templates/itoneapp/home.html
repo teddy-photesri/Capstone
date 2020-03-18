@@ -3,6 +3,19 @@
 {% block content %}
 {% load static %}
 
+<style>
+  #calendar-body {
+    .border-radius-10 {
+      border-radius: 10px;
+    }
+  }
+
+  tbody {
+    .border-radius-10 {
+      border-radius: 10px;
+    }
+  }
+</style>
 
 <div class="container">
 
@@ -62,7 +75,7 @@
               </tr>
             </thead>
 
-            <tbody id="calendar-body"></tbody>
+            <tbody class="" id="calendar-body"></tbody>
           </table>
 
           <div class="form-inline d-flex justify-content-between">
@@ -83,7 +96,112 @@
 
 </div>
 
-<script src="{% static 'itoneapp/js/calendar.js' %}"></script>
+<script type="text/javascript">
+  let today = new Date()
+  let currentMonth = today.getMonth()
+  let currentYear = today.getFullYear()
+
+  let months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"
+  ];
+
+  let monthAndYear = document.getElementById("monthAndYear");
+
+  showCalendar(currentMonth, currentYear);
+
+  function showCalendar(month, year) {
+    let firstDay = new Date(year, month).getDay();
+    let daysInMonth = 32 - new Date(year, month, 32).getDate();
+
+    let tbl = document.getElementById("calendar-body");
+
+    tbl.innerHTML = "";
+
+    monthAndYear.innerHTML = months[month] + " " + year;
+
+
+
+    let date = 1;
+
+    for (let i = 0; i < 6; i++) {
+      let row = document.createElement('tr');
+
+      for (let j = 0; j < 7; j++) {
+        if(i === 0 && j < firstDay) {
+          let cell = document.createElement('td');
+          cell.innerText = ''
+          row.appendChild(cell);
+        } else if (date > daysInMonth) {
+          break;
+        } else {
+          let cell = document.createElement('td');
+          cell.innerText = date
+
+          let colors = {
+            joy: '#ee7a2f',
+            love: '#bd2a74',
+            fear: '#231f20',
+            surprise: '#ead917',
+            anger: '#e83626',
+            sadness: '#27489d',
+          }
+
+          {% for entry in journal_entries %}
+          if (date == {{entry.date_journal.day}}) {
+            // make sure this journal entry is for the current year and month
+            if ({{entry.date_journal.year}} == year && {{entry.date_journal.month}} == month + 1) {
+              let hex = ({{entry.intensity}}/10*255).toString(16)
+              if (hex.length < 2) {
+                hex = '0' + hex
+              }
+              cell.style.backgroundColor = colors['{{entry.emotion.name.lower}}'] + hex
+              console.log(cell.style.backgroundColor)
+              // cell.style.opacity = {{entry.intensity}}/10
+            }
+          }
+          {% endfor %}
+
+          // if (date === today.getDate()){
+          //   if (!cell.style.backgroundColor) {
+          //     cell.style.backgroundColor = "#EFEFEF";
+          //   }
+          //   cell.style.color = 'blue'
+          // }
+
+          row.appendChild(cell);
+        }
+
+        date++;
+      }
+      tbl.appendChild(row);
+
+    }
+  }
+
+  function previous() {
+    currentYear = currentMonth === 0 ? currentYear - 1: currentYear;
+    currentMonth = currentMonth === 0 ? 11: currentMonth - 1;
+    showCalendar(currentMonth, currentYear);
+  }
+
+  function next() {
+    currentYear = currentMonth === 11 ? currentYear + 1: currentYear;
+    currentMonth = (currentMonth + 1) % 12;
+    showCalendar(currentMonth, currentYear);
+  }
+
+</script>
 
 
   <!-- <a href="{% url 'itoneapp:logout' %}">logout</a> -->

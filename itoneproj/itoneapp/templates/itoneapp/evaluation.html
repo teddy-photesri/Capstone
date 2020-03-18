@@ -1,0 +1,50 @@
+{% extends "itoneapp/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<style type="text/css">
+  .width-75 {
+    width: 75px;
+  }
+
+</style>
+
+<script src="https://cdnjs.com/libraries/Chart.js"></script>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col mt-2">
+      <div class="d-flex justify-content-center">
+        <a href="{% url 'itoneapp:home' %}">
+          <img src="{% static 'itoneapp/logo/brand3.png' %}" alt="logo" class="" width="125px"/>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="d-flex justify-content-center">
+        <h6>emotions evaluation</h6>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col d-flex justify-content-between">
+      <a class="btn rounded border border-dark width-75" href="">Day</a>
+      <a class="btn rounded border border-dark width-75" href="">Week</a>
+      <a class="btn rounded border border-dark width-75" href="">Month</a>
+      <a class="btn rounded border border-dark width-75" href="">Year</a>
+    </div>
+  </div>
+</div>
+
+<!-- <script src="{% static 'itoneapp/js/main.js' %}"></script> -->
+
+{% endblock %}

@@ -57,11 +57,13 @@ def logout_user(request):
 def home(request):
     # get emotions out of database
     emotions = Emotion.objects.all()
+    journal_entries = JournalEntry.objects.all()
 
     # pass them into the data context to be rendered
     context = {
         'title': 'home',
-        'emotions': emotions
+        'emotions': emotions,
+        'journal_entries': journal_entries
     }
     return render(request, 'itoneapp/home.html', context)
 
@@ -151,3 +153,10 @@ def edit_save(request, journal_detail_id=0):
 
     # redirect back to the journal_list view
     return HttpResponseRedirect(reverse('itoneapp:journal_list'))
+
+@login_required
+def evaluation(request):
+    context = {
+        'message': 'Hello World!'
+    }
+    return render(request, 'itoneapp/evaluation.html', context)

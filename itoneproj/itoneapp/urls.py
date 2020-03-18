@@ -16,6 +16,10 @@ urlpatterns = [
     path('delete_journal/<int:journal_detail_id>', views.delete_journal, name='delete_journal'),
     path('edit_journal/<int:journal_detail_id>', views.edit_journal, name='edit_journal'),
     path('edit_save/<int:journal_detail_id>', views.edit_save, name='edit_save'),
+    path('evaluation/', views.evaluation, name='evaluation'),
+
+
+
 
 
 

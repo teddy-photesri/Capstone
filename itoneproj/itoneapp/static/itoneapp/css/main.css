@@ -120,3 +120,7 @@ a.article-title:hover {
 .mt-13 {
   margin-top: 13em;
 }
+
+.border-radius-10 {
+  border-radius: 10px;
+}
