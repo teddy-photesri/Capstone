@@ -10,7 +10,7 @@
 
 </style>
 
-<script src="https://cdnjs.com/libraries/Chart.js"></script>
+
 
 <div class="container">
 
@@ -44,6 +44,80 @@
     </div>
   </div>
 </div>
+
+
+<!-- graph -->
+<div class="container mt-4">
+  <div class="row">
+    <div class="col">
+      <canvas id="myChart" width="400" height="500"></canvas>
+      <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['', '', '', '', '', ''],
+                // labels: ['Joy', 'Love', 'Surprise', 'Anger', 'Sadness', 'Fear'],
+                datasets: [{
+                    label: 'Intensity',
+                    // label: '# of Votes',
+                    data: [1, 10, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(238, 122, 47, 0.2)',
+                        'rgba(189, 42, 116, 0.2)',
+                        'rgba(234, 217, 23, 0.2)',
+                        'rgba(232, 54, 38, 0.2)',
+                        'rgba(39, 22, 157, 0.2)',
+                        'rgba(35, 31, 32, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(238, 122, 47, 1)',
+                        'rgba(189, 42, 116, 1)',
+                        'rgba(234, 217, 23, 1)',
+                        'rgba(232, 54, 38, 1)',
+                        'rgba(39, 22, 157, 1)',
+                        'rgba(35, 31, 32, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+      </script>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-12 col-md-6 col-sm-6 d-flex justify-content-between">
+
+      <!-- loop over emotions and make a div for each -->
+      {% for emotion in emotions %}
+      <div class="text-center">
+        <a href="{% url 'itoneapp:evaluation' %}"><img src="{{emotion.icon.url}}" alt="" width="50px" class="rounded-circle shadow"></a>
+
+        <div class="font-10 mt-1">{{emotion.name}}</div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+
+
+
+
 
 <!-- <script src="{% static 'itoneapp/js/main.js' %}"></script> -->
 

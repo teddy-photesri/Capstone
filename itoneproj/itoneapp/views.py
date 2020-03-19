@@ -1,5 +1,5 @@
 from django.shortcuts import render, reverse
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.views.generic import ListView
@@ -156,7 +156,14 @@ def edit_save(request, journal_detail_id=0):
 
 @login_required
 def evaluation(request):
+    emotions = Emotion.objects.all()
+    intensities = JournalEntry.objects.all()
+
+    print(request.GET)
     context = {
-        'message': 'Hello World!'
+        'title': 'evaluation',
+        'emotions': emotions,
+        'intensities': intensities,
     }
+
     return render(request, 'itoneapp/evaluation.html', context)

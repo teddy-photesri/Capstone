@@ -25,7 +25,7 @@
   </div>
 
   <form class="row mt-5" action="{% url 'itoneapp:edit_save' journal_detail.id %}" method="post">
-    <input type="hidden" value="" name="emotion" id="change_emotion">
+    <input type="hidden" value="{{emotion.id}}" name="emotion" id="change_emotion">
     <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center">
       {% csrf_token %}
 
