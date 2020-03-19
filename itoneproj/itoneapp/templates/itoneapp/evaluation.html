@@ -50,7 +50,9 @@
 <div class="container mt-4">
   <div class="row">
     <div class="col">
+
       <canvas id="myChart" width="400" height="500"></canvas>
+
       <script>
         var ctx = document.getElementById('myChart').getContext('2d');
         var myChart = new Chart(ctx, {
@@ -60,8 +62,8 @@
                 // labels: ['Joy', 'Love', 'Surprise', 'Anger', 'Sadness', 'Fear'],
                 datasets: [{
                     label: 'Intensity',
-                    // label: '# of Votes',
-                    data: [1, 10, 3, 5, 2, 3],
+                    label: '',
+                    data: {{intensities}},
                     backgroundColor: [
                         'rgba(238, 122, 47, 0.2)',
                         'rgba(189, 42, 116, 0.2)',
@@ -94,6 +96,7 @@
       </script>
 
     </div>
+
   </div>
 </div>
 

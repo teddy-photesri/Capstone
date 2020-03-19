@@ -33,4 +33,4 @@ class JournalEntry(models.Model):
         ordering = ['-date_journal']
 
     def __str__(self):
-        return self.user.username + ' ' + str(self.emotion) + " " + self.content[:20] +  " " + str(self.date_journal)
+        return self.user.username + ' ' + str(self.emotion) + " " + str(self.date_journal)

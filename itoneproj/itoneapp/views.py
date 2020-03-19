@@ -77,12 +77,14 @@ def profile(request):
 @login_required
 def journal_entry(request):
     # get emotions out of database
-    print(request.GET['emotion'])
     emotions = Emotion.objects.all()
+    selected_emotion_id = int(request.GET.get('emotion', 1))
+    selected_emotion = Emotion.objects.get(id=selected_emotion_id)
+    # selected_emotion = Emotion.objects.get()
     context = {
         'title': 'Journal',
         'emotions': emotions,
-        'selected_emotion_id': int(request.GET['emotion']),
+        'selected_emotion': selected_emotion,
     }
     return render(request, 'itoneapp/journal_entry.html', context)
 
@@ -94,6 +96,7 @@ def savejournal(request):
     intensity = request.POST['intensity']
     input_detail = request.POST['input_detail']
     name = request.POST['emotion']
+    print(name)
     emotion = Emotion.objects.get(name=name)
     user = request.user
 
@@ -157,13 +160,15 @@ def edit_save(request, journal_detail_id=0):
 @login_required
 def evaluation(request):
     emotions = Emotion.objects.all()
-    intensities = JournalEntry.objects.all()
-
+    journal_entries = JournalEntry.objects.all()
+    intensities = [entry.intensity for entry in journal_entries]
+    intensities = str(intensities)
     print(request.GET)
     context = {
         'title': 'evaluation',
         'emotions': emotions,
-        'intensities': intensities,
+        'journal_entries': journal_entries,
+        'intensities': intensities
     }
 
     return render(request, 'itoneapp/evaluation.html', context)

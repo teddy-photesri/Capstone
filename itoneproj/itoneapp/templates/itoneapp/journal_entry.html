@@ -25,7 +25,7 @@
   </div>
 
   <form class="row mt-5" action="{% url 'itoneapp:savejournal' %}" method="post">
-    <input type="hidden" value="{{emotion.id}}" name="emotion" id="change_emotion">
+    <input type="hidden" value="{{selected_emotion.name}}" name="emotion" id="change_emotion">
     <div class="col-lg-12 col-md-6 col-sm-6 d-flex justify-content-between">
       {% csrf_token %}
 
@@ -33,7 +33,7 @@
       {% for emotion in emotions %}
       <div class="text-center">
         <!-- {{selected_emotion_id}} {{emotion.id}} -->
-        <div data-name="{{emotion.name}}" name="" class="emo_icon" {% if selected_emotion_id != emotion.id %}style="opacity:0.2"{% endif %}>
+        <div data-name="{{emotion.name}}" name="" class="emo_icon" {% if selected_emotion.id != emotion.id %}style="opacity:0.2"{% endif %}>
           <img src="{{emotion.icon.url}}" alt="" width="50px" class="rounded-circle shadow">
         </div>
 
@@ -46,13 +46,13 @@
     <div class="col mt-3">
       <div class="form-group">
 
-        <input type="range" class="custom-range" min="0" max="10" id="input_intensity" name="intensity">
+        <input type="range" class="custom-range" min="0" max="10" id="input_intensity" name="intensity" value="5">
 
         <label class="font-10">Intensity</label>
-        <label id="label_intensity" class="font-weight-bold" for="input_intensity"></label>
+        <label id="label_intensity" class="font-weight-bold" for="input_intensity">5</label>
 
         <label for="input_detail"></label>
-        <textarea class="form-control mt-3" id="input_detail" rows="15" placeholder="Let it out!" name="input_detail"></textarea>
+        <textarea class="form-control mt-3" id="input_detail" rows="15" placeholder="Let it out!" name="input_detail" required></textarea>
 
 
         <div class="d-flex justify-content-center mt-3">
