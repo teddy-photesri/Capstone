@@ -108,7 +108,9 @@ a.article-title:hover {
 .width-300 {
   width: 300px;
 }
-
+.mt-6 {
+  margin-top: 6em;
+}
 .mt-8 {
   margin-top: 8em;
 }

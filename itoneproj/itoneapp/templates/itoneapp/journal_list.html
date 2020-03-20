@@ -39,7 +39,7 @@
 <div class="container mt-5">
   <!-- <div class="row"> -->
 
-    <div class="accordion" id="accordionExample">
+    <div class="accordion" id="accordion">
       {% for entry in entries %}
       <div class="card mt-3">
         <div class="card-header d-flex justify-content-between" id="heading{{forloop.counter}}" data-toggle="collapse" data-target="#collapse{{forloop.counter}}" aria-expanded="true" aria-controls="collapse{{forloop.counter}}">
@@ -57,7 +57,7 @@
 
         </div>
 
-        <div id="collapse{{forloop.counter}}" class="collapse" aria-labelledby="heading{{forloop.counter}}" data-parent="#accordionExample">
+        <div id="collapse{{forloop.counter}}" class="collapse" aria-labelledby="heading{{forloop.counter}}" data-parent="#accordion">
           <div class="card-body">
             {{entry.content}}
           </div>
@@ -81,6 +81,19 @@
 
 </div>
 
+ <script type="text/javascript">
+   let colors_transparent = [
+       'rgba(238, 122, 47, 0.2)',
+       'rgba(189, 42, 116, 0.2)',
+       'rgba(234, 217, 23, 0.2)',
+       'rgba(232, 54, 38, 0.2)',
+       'rgba(39, 22, 157, 0.2)',
+       'rgba(35, 31, 32, 0.2)'
+   ]
+
+
+
+ </script>
 
 
 

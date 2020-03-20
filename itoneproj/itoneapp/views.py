@@ -15,7 +15,12 @@ def register_user(request):
     username = request.POST['username']
     email = request.POST['email']
     password = request.POST['password']
+    profile_image = request.FILES['profile_image']
+
     user = User.objects.create_user(username, email, password)
+    user.profile_image = profile_image
+    user.save()
+
     login(request, user)
 
     return HttpResponseRedirect(reverse('itoneapp:home'))
@@ -163,12 +168,15 @@ def evaluation(request):
     journal_entries = JournalEntry.objects.all()
     intensities = [entry.intensity for entry in journal_entries]
     intensities = str(intensities)
+    # selected_emotion = JournalEntry.objects.all()
+
     print(request.GET)
     context = {
         'title': 'evaluation',
         'emotions': emotions,
         'journal_entries': journal_entries,
-        'intensities': intensities
+        'intensities': intensities,
+        # 'selected_emotion': selected_emotion,
     }
 
     return render(request, 'itoneapp/evaluation.html', context)

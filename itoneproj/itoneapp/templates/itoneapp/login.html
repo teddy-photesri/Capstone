@@ -4,11 +4,11 @@
 
 <div class="container">
   <div class="row">
-    <div class="col mt-10">
+    <div class="col mt-8">
       <div class="d-flex justify-content-center">
-        <a href="{% url 'itoneapp:home' %}">
-          <img src="{% static 'itoneapp/logo/brand3.png' %}" alt="logo" class="" width="200px"/>
-        </a>
+
+        <img src="{% static 'itoneapp/logo/brand3.png' %}" alt="logo" class="" width="200px"/>
+
       </div>
     </div>
   </div>
@@ -27,7 +27,7 @@
 </div>
 
 <div class="container">
-  <div class="row mt-5">
+  <div class="row mt-8">
     <div class="col">
       <form class="" action="{% url 'itoneapp:login_user' %}" method="post">
         {% csrf_token %}
