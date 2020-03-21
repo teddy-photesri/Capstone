@@ -80,6 +80,34 @@ def profile(request):
     return render(request, 'itoneapp/profile.html', context)
 
 @login_required
+def profile_edit(request, user_id=0):
+    profiles = User.objects.get(id=user_id)
+    context = {
+        'profiles': profiles
+    }
+    return render(request, 'itoneapp/profile_edit.html', context)
+
+@login_required
+def profile_edit_save(request, user_id=0):
+    profiles = User.objects.get(id=user_id)
+
+    profile_image = request.FILES.get('profile_image', False)
+    print(request.POST)
+    username = request.POST['username']
+    email = request.POST['email']
+
+    profiles.username=username
+    profiles.email=email
+    if profile_image:
+        profiles.profile_image=profile_image
+
+    profiles.save()
+
+    return HttpResponseRedirect(reverse('itoneapp:profile'))
+
+
+
+@login_required
 def journal_entry(request):
     # get emotions out of database
     emotions = Emotion.objects.all()

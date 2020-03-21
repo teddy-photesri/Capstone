@@ -7,8 +7,8 @@
   .profile-body {
     background-color: #27489d;
     border-radius: 40px 40px 0 0;
-    height: 73vh;
-    transform: translate(0, 10vh);
+    height: 65vh;
+    transform: translate(0, 12vh);
 
   }
   .inner-profile {
@@ -21,7 +21,13 @@
   }
 </style>
 
-
+<div class="container">
+  <div class="row">
+    <div class="col mt-3">
+      <a href="{% url 'itoneapp:profile_edit' user.id%}" class="opct-80"><img class="ml-1" src="{% static 'itoneapp/icons/edit.svg' %}" alt=""></a>
+    </div>
+  </div>
+</div>
 
 <div class="container">
   <div class="row">

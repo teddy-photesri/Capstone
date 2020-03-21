@@ -102,6 +102,18 @@ a.article-title:hover {
 .text-color-blue {
   color: #27489d;
 }
+.width-30 {
+  width: 30px;
+}
+.width-35 {
+  width: 35px;
+}
+.width-40 {
+  width: 40px;
+}
+.width-50 {
+  width: 50px;
+}
 .width-100 {
   width: 100px;
 }
@@ -114,7 +126,9 @@ a.article-title:hover {
 .mt-8 {
   margin-top: 8em;
 }
-
+.mt-9 {
+  margin-top: 9em;
+}
 .mt-10 {
   margin-top: 10em;
 }

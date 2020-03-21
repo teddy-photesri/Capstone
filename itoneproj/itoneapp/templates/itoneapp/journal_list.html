@@ -3,10 +3,20 @@
 
 {% block content %}
 
+
+
+<div class="container">
+  <div class="row">
+    <div class="col mt-3">
+      <a href="{% url 'itoneapp:journal_entry' %}" class="opct-80"><img class="width-35" src="{% static 'itoneapp/icons/add.svg' %}" alt=""></a>
+    </div>
+  </div>
+</div>
+
 <div class="container">
 
   <div class="row">
-    <div class="col mt-2">
+    <div class="col">
       <div class="d-flex justify-content-center">
         <a href="{% url 'itoneapp:home' %}">
           <img src="{% static 'itoneapp/logo/brand3.png' %}" alt="logo" class="" width="125px"/>
@@ -33,6 +43,14 @@
     flex-direction:row;
     align-items:center;
   }
+
+  .opct-80 {
+    opacity: 0.8;
+  }
+  .opct-70 {
+    opacity: 0.7;
+  }
+
 </style>
 
 
@@ -42,17 +60,17 @@
     <div class="accordion" id="accordion">
       {% for entry in entries %}
       <div class="card mt-3">
-        <div class="card-header d-flex justify-content-between" id="heading{{forloop.counter}}" data-toggle="collapse" data-target="#collapse{{forloop.counter}}" aria-expanded="true" aria-controls="collapse{{forloop.counter}}">
+        <div class="card-header d-flex justify-content-between" style="background-color:{{entry.emotion.color}}" id="heading{{forloop.counter}}" data-toggle="collapse" data-target="#collapse{{forloop.counter}}" aria-expanded="true" aria-controls="collapse{{forloop.counter}}">
           <div class="text-left">
             <img src="{{entry.emotion.icon.url}}" name="journal_detail_id" alt="" width="50px" class="rounded-circle shadow">
           </div>
           <div class="text-center">
             <div class="mt-1" name="journal_id">{{entry.emotion.name}}</div>
-            <div class="font-10 mt-1">Intensity {{entry.intensity}}</div>
+            <!-- <div class="font-10 mt-1">Intensity {{entry.intensity}}</div> -->
             <div class="font-10 mt-1">{{entry.date_journal|date:"M-d-Y, H:i"}}</div>
           </div>
           <div class="text-right">
-            <p>:</p>
+            <img class="opct-80" src="{% static 'itoneapp/icons/more.svg' %}" alt="">
           </div>
 
         </div>
@@ -62,13 +80,13 @@
             {{entry.content}}
           </div>
 
-          <div class="card-header d-flex justify-content-between">
+          <div class="card-header d-flex justify-content-between" style="background-color:{{entry.emotion.color}}">
             <div class="ml-1">
-              <a href="{% url 'itoneapp:delete_journal' entry.id%}">Delete</a>
+              <a href="{% url 'itoneapp:delete_journal' entry.id%}" class="opct-80"><img src="{% static 'itoneapp/icons/delete.svg' %}" alt=""></a>
             </div>
 
             <div class="mr-1">
-              <a href="{% url 'itoneapp:edit_journal' entry.id%}">Edit</a>
+              <a href="{% url 'itoneapp:edit_journal' entry.id%}" class="opct-80"><img src="{% static 'itoneapp/icons/edit.svg' %}" alt=""></a>
             </div>
 
           </div>
@@ -81,20 +99,32 @@
 
 </div>
 
- <script type="text/javascript">
-   let colors_transparent = [
-       'rgba(238, 122, 47, 0.2)',
-       'rgba(189, 42, 116, 0.2)',
-       'rgba(234, 217, 23, 0.2)',
-       'rgba(232, 54, 38, 0.2)',
-       'rgba(39, 22, 157, 0.2)',
-       'rgba(35, 31, 32, 0.2)'
-   ]
+
+
+<!-- <script type="text/javascript">
+
+  let colors_transparent = [
+      'rgba(238, 122, 47, 0.2)',
+      'rgba(189, 42, 116, 0.2)',
+      'rgba(234, 217, 23, 0.2)',
+      'rgba(232, 54, 38, 0.2)',
+      'rgba(39, 22, 157, 0.2)',
+      'rgba(35, 31, 32, 0.2)',
+  ]
 
 
 
- </script>
+  {% for entry in journal_entries %}
 
+  if ({{entry.i}} === 'true') {
+    accordion[i].style.backgroundColor = colors_transparent[i]
+
+
+  }
+
+  {% endfor %}
+
+</script> -->
 
 
 

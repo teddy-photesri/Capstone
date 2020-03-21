@@ -4,9 +4,17 @@
 {% block content %}
 
 <div class="container">
+  <div class="row">
+    <div class="col mt-3">
+      <a href="{% url 'itoneapp:journal_list' %}" class="opct-80"><img class="width-35" src="{% static 'itoneapp/icons/backward.svg' %}" alt=""></a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
 
   <div class="row">
-    <div class="col mt-2">
+    <div class="col">
       <div class="d-flex justify-content-center">
         <a href="{% url 'itoneapp:home' %}">
           <img src="{% static 'itoneapp/logo/brand3.png' %}" alt="logo" class="" width="125px"/>
@@ -52,7 +60,7 @@
         <label id="label_intensity" class="font-weight-bold" for="input_intensity">5</label>
 
         <label for="input_detail"></label>
-        <textarea class="form-control mt-3" id="input_detail" rows="15" placeholder="Let it out!" name="input_detail" required></textarea>
+        <textarea class="form-control mt-3" id="input_detail" rows="13" placeholder="Let it out!" name="input_detail" required></textarea>
 
 
         <div class="d-flex justify-content-center mt-3">
