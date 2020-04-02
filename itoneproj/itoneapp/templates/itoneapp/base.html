@@ -30,6 +30,13 @@
     {% endif %}
 
   </head>
+
+  <style>
+    .nav-top {
+      z-index: 1;
+    }
+  </style>
+
   <body>
     <header>
 
@@ -44,10 +51,15 @@
         <nav class="menu">
           <div class="menu-branding">
             <a href="{% url 'itoneapp:home' %}">
+              {% if user.profile_image %}
               <img src="{{user.profile_image.url}}" alt="" class="rounded-circle" width="150px">
+              {% else %}
+              <img src="{% static 'itoneapp/logo/imageholder.jpg' %}" alt="" class="rounded-circle" width="150px">
+              {% endif %}
+
             </a>
           </div>
-          
+
           <ul class="menu-nav">
 
             <li class="nav-item current">

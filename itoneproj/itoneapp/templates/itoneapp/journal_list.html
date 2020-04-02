@@ -4,6 +4,29 @@
 {% block content %}
 
 
+<style>
+  .card-header,
+  .under-card {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+  }
+
+  .opct-80 {
+    opacity: 0.8;
+  }
+  .opct-70 {
+    opacity: 0.7;
+  }
+
+  .position-sticky {
+    top: 0;
+    z-index: 9;
+
+  }
+
+
+</style>
 
 <div class="container">
   <div class="row">
@@ -11,9 +34,6 @@
       <a href="{% url 'itoneapp:journal_entry' %}" class="opct-80"><img class="width-35" src="{% static 'itoneapp/icons/add.svg' %}" alt=""></a>
     </div>
   </div>
-</div>
-
-<div class="container">
 
   <div class="row">
     <div class="col">
@@ -36,22 +56,6 @@
 </div>
 
 
-<style>
-  .card-header,
-  .under-card {
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-  }
-
-  .opct-80 {
-    opacity: 0.8;
-  }
-  .opct-70 {
-    opacity: 0.7;
-  }
-
-</style>
 
 
 <div class="container mt-5">
@@ -65,7 +69,7 @@
             <img src="{{entry.emotion.icon.url}}" name="journal_detail_id" alt="" width="50px" class="rounded-circle shadow">
           </div>
           <div class="text-center">
-            <div class="mt-1" name="journal_id">{{entry.emotion.name}}</div>
+            <div class="mt-1" name="journal_id">{{entry.emotion.name}} ( {{entry.intensity}} )</div>
             <!-- <div class="font-10 mt-1">Intensity {{entry.intensity}}</div> -->
             <div class="font-10 mt-1">{{entry.date_journal|date:"M-d-Y, H:i"}}</div>
           </div>

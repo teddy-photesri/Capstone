@@ -22,7 +22,12 @@
   <div class="row">
     <div class="col mt-2">
       <div class="d-flex justify-content-center">
+        {% if user.profile_image %}
         <img src="{{user.profile_image.url}}" alt="" class="rounded-circle" width="125px">
+        {% else %}
+        <img src="{% static 'itoneapp/logo/imageholder.jpg' %}" alt="" class="rounded-circle" width="125px">
+        {% endif %}
+
       </div>
     </div>
   </div>
@@ -32,171 +37,33 @@
       <div class="d-flex justify-content-center mt-3">
         <h4 class="text-capitalize font-weight-bold">Hi {{user.username}}!</h4>
       </div>
-      <div class="d-flex justify-content-center mt-4">
-        <h5>How do you feel?</h5>
+      <div class="d-flex justify-content-center mt-5">
+        <h3>How do you feel?</h3>
       </div>
-    </div>
-  </div>
-
-  <div class="row mt-1">
-    <div class="col-lg-12 col-md-6 col-sm-6 d-flex justify-content-between">
-
-      <!-- loop over emotions and make a div for each -->
-      {% for emotion in emotions %}
-      <div class="text-center">
-        <a href="{% url 'itoneapp:journal_entry' %}?emotion={{emotion.id}}"><img src="{{emotion.icon.url}}" alt="" width="50px" class="rounded-circle shadow"></a>
-
-        <div class="font-10 mt-1">{{emotion.name}}</div>
-      </div>
-      {% endfor %}
-
-    </div>
-  </div>
-
-<!-- credit https://www.youtube.com/watch?v=CuXl6D4e9_k -->
-  <div class="row mt-5">
-    <div class="col-lg-12 col-md-6 col-sm-4 d-flex justify-content-center">
-
-      <div class="text-center d-flex justify-content-between">
-        <div class="card ">
-
-          <h3 class="card-header" id="monthAndYear"></h3>
-
-          <table class="table table-bordered table-responsive-sm" id="calendar">
-            <thead>
-              <tr>
-                <th class="bg-color-blue text-white">S</th>
-                <th class="bg-color-blue text-white">M</th>
-                <th class="bg-color-blue text-white">T</th>
-                <th class="bg-color-blue text-white">W</th>
-                <th class="bg-color-blue text-white">T</th>
-                <th class="bg-color-blue text-white">F</th>
-                <th class="bg-color-blue text-white">S</th>
-              </tr>
-            </thead>
-
-            <tbody class="" id="calendar-body"></tbody>
-          </table>
-
-          <div class="form-inline d-flex justify-content-between">
-            <div><button class="btn bg-color-blue text-white col-sm-6 width-100" onclick="previous()">Previous</button></div>
-            <div><button class="btn bg-color-blue text-white col-sm-6 width-100" onclick="next()">Next</button></div>
-
-
-
-          </div>
-
-        </div>
-      </div>
-
-
     </div>
   </div>
 
 
 </div>
 
-<script type="text/javascript">
-  let today = new Date()
-  let currentMonth = today.getMonth()
-  let currentYear = today.getFullYear()
+<div class="comtainer">
 
-  let months = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec"
-  ];
+    <div class="row mt-3">
+      <div class="col-sm-6 d-flex flex-wrap justify-content-between">
 
-  let monthAndYear = document.getElementById("monthAndYear");
+        <!-- loop over emotions and make a div for each -->
+        {% for emotion in emotions %}
+        <div class="col text-center mt-4">
+          <a href="{% url 'itoneapp:journal_entry' %}?emotion={{emotion.id}}"><img src="{{emotion.icon.url}}" alt="" width="100px" class="rounded-circle shadow"></a>
 
-  showCalendar(currentMonth, currentYear);
+          <div class="mt-1">{{emotion.name}}</div>
+        </div>
+        {% endfor %}
 
-  function showCalendar(month, year) {
-    let firstDay = new Date(year, month).getDay();
-    let daysInMonth = 32 - new Date(year, month, 32).getDate();
+      </div>
+    </div>
 
-    let tbl = document.getElementById("calendar-body");
+</div>
 
-    tbl.innerHTML = "";
-
-    monthAndYear.innerHTML = months[month] + " " + year;
-
-
-
-    let date = 1;
-
-    for (let i = 0; i < 6; i++) {
-      let row = document.createElement('tr');
-
-      for (let j = 0; j < 7; j++) {
-        if(i === 0 && j < firstDay) {
-          let cell = document.createElement('td');
-          cell.innerText = ''
-          row.appendChild(cell);
-        } else if (date > daysInMonth) {
-          break;
-        } else {
-          let cell = document.createElement('td');
-          cell.innerText = date
-
-          let colors = {
-            joy: '#ee7a2f',
-            love: '#bd2a74',
-            fear: '#231f20',
-            surprise: '#ead917',
-            anger: '#e83626',
-            sadness: '#27489d',
-          }
-
-          {% for entry in journal_entries %}
-          if (date == {{entry.date_journal.day}}) {
-            // make sure this journal entry is for the current year and month
-            if ({{entry.date_journal.year}} == year && {{entry.date_journal.month}} == month + 1) {
-              let hex = ({{entry.intensity}}/10*255).toString(16)
-              if (hex.length < 2) {
-                hex = '0' + hex
-              }
-              cell.style.backgroundColor = colors['{{entry.emotion.name.lower}}'] + hex
-              console.log(cell.style.backgroundColor)
-              // cell.style.opacity = {{entry.intensity}}/10
-            }
-          }
-          {% endfor %}
-
-          row.appendChild(cell);
-        }
-
-        date++;
-      }
-      tbl.appendChild(row);
-
-    }
-  }
-
-  function previous() {
-    currentYear = currentMonth === 0 ? currentYear - 1: currentYear;
-    currentMonth = currentMonth === 0 ? 11: currentMonth - 1;
-    showCalendar(currentMonth, currentYear);
-  }
-
-  function next() {
-    currentYear = currentMonth === 11 ? currentYear + 1: currentYear;
-    currentMonth = (currentMonth + 1) % 12;
-    showCalendar(currentMonth, currentYear);
-  }
-
-</script>
-
-
-  <!-- <a href="{% url 'itoneapp:logout' %}">logout</a> -->
 
 {% endblock %}

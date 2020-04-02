@@ -15,7 +15,7 @@ def register_user(request):
     username = request.POST['username']
     email = request.POST['email']
     password = request.POST['password']
-    profile_image = request.FILES['profile_image']
+    profile_image = request.FILES.get('profile_image', None)
 
     user = User.objects.create_user(username, email, password)
     user.profile_image = profile_image
