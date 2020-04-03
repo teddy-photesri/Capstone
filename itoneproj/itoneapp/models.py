@@ -27,9 +27,6 @@ class JournalEntry(models.Model):
     def time(self):
         return str(self.date_journal)
 
-    # def date(self):
-    #     return str(self.date_journal.month) + " " + str(self.date_journal.date) + ", " + str(self.date_journal.year)
-
     class Meta:
         ordering = ['-date_journal']
 
